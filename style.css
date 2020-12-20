@@ -1,0 +1,105 @@
+*{
+  padding: 0;
+  marker: 0;
+  box-sizing: border;
+}
+body{
+  background-color: aliceblue;
+  font-size: 18px;
+  font-family: Montserrat;
+}
+section{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.container{
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px #00000011;
+  width: 90%;
+  max-width: 400px;
+}
+form{
+  width: 100%;
+  font-size: 20px;
+}
+.result{
+  background-color: rgb(220, 233, 243);
+  position: relative;
+  margin-bottom: 30px;
+}
+.result #result{
+  width: 85%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 10px;
+}
+.result .clipboard {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+  background-color: rgb(156, 204, 238);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.selection input[type="number"] {
+  width: 50px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  padding-right: 0px;
+  font-size: 16px;
+  background-color: rgb(241, 241, 241);
+  /* webkit-appearance: none; */
+}
+.selection {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  transition: 0.3s ease background-color;
+}
+.selection:hover {
+  background-color: rgb(220, 233, 243);
+}
+.selection label {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.selection input {
+  cursor: pointer;
+}
+button[type="submit"] {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  background-color: rgb(156, 204, 238);
+  font-size: 18px;
+  font-family: "Montserrat";
+  cursor: pointer;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 678px) {
+  .selection {
+    font-size: 16px;
+  }
+}
